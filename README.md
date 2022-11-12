@@ -1,53 +1,34 @@
-# Unity Template Project for Built-in RP
+# Stars and Fireworks UI VFX
 
-{{YOUR_PROJECT_DESCRIPTION_HERE}} in **Unity 2021.3.10f1**
-
-### References
-
-- [Ref](https://adrianb.io/2014/08/09/perlinnoise.html)
-- [Ref](https://adrianb.io/2014/08/09/perlinnoise.html)
+Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
 
 ## Screenshots
 
-![Gif](./docs/1.gif)
-![Gif](./docs/1.gif)
+### Table Of Content
 
-## Features
+- [Implementation](#implementation)
+  - [Design UI Elements](#design-ui-elements)
+  - [Install Plugin for Particle System in the UI](#install-plugin-for-particle-system-in-the-ui)
 
-- [Feature](#feature)
-- [Feature](#feature)
-- [Feature](#feature)
+### Resources
 
----
+- [Fireworks and Stars | Unity Tutorial by Jettelly](https://www.youtube.com/watch?v=mCM2BwZbuwY)
+- [ParticleEffectForUGUI by Mob-Sakai](https://github.com/mob-sakai/ParticleEffectForUGUI)
+- [Fireworks VFX by Aqsa Nadeem](https://www.youtube.com/watch?v=1o4PMeao9kA)
+- [ShaderLab Blend](https://docs.unity3d.com/Manual/SL-Blend.html)
 
-## Feature
+## Implementation
 
-1. Implementation detail.
-1. Implementation detail.
-1. Implementation detail.
+### Design UI Elements
 
-![Gif](./docs/1.gif)
-![Gif](./docs/1.gif)
+- Design the UI elements in Affinity
+  - Main Sign for the "Level Up" message
+  - Glow effect around the Sign
+  - Rays of Light behind teh Sign
+  - Stars for the particle emitter
+  - Circles for the fireworks emitters
 
-## Feature
+### Install Plugin for Particle System in the UI
 
-1. Implementation detail.
-1. Implementation detail.
-1. Implementation detail.
-
-![Gif](./docs/1.gif)
-![Gif](./docs/1.gif)
-
----
-
-## Implementation explained
-
-1. **Step**
-
-   1. Sub Step.
-   1. Sub Step.
-
-1. **Step**
-
-   1. Sub Step.
-   1. Sub Step.
+- Install the package using the github url from this repo https://github.com/mob-sakai/ParticleEffectForUGUI
+- This will allow to render particles from the particle system in the UI Canvas, using a CanvasRenderer.
