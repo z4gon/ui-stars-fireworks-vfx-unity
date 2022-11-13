@@ -8,7 +8,7 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
 
 - [Implementation](#implementation)
   - [Design UI Elements](#design-ui-elements)
-  - [Install Plugin for Particle System in the UI](#install-plugin-for-particle-system-in-the-ui)
+  - [Install the UI Particle Package for Particle Systems in the GUI](#install-the-ui-particle-package-for-particle-systems-in-the-gui)
 
 ### Resources
 
@@ -16,6 +16,7 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
 - [ParticleEffectForUGUI by Mob-Sakai](https://github.com/mob-sakai/ParticleEffectForUGUI)
 - [Fireworks VFX by Aqsa Nadeem](https://www.youtube.com/watch?v=1o4PMeao9kA)
 - [ShaderLab Blend](https://docs.unity3d.com/Manual/SL-Blend.html)
+- [Background Image](https://unsplash.com/photos/qBrF1yu5Wys)
 
 ## Implementation
 
@@ -28,7 +29,11 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
   - Stars for the particle emitter
   - Circles for the fireworks emitters
 
-### Install Plugin for Particle System in the UI
+![Picture](./docs/2.jpg)
+
+### Install the UI Particle Package for Particle Systems in the GUI
 
 - Install the package using the github url from this repo https://github.com/mob-sakai/ParticleEffectForUGUI
 - This will allow to render particles from the particle system in the UI Canvas, using a CanvasRenderer.
+
+![Picture](./docs/1.jpg)
