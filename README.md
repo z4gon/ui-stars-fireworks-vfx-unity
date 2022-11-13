@@ -84,7 +84,7 @@ Shader "Unlit/Rainbow"
 fixed4 frag (v2f IN) : SV_Target
 {
     // animate uvs for rainbow
-    float2 rainbowUV = frac(IN.uv_Rainbow + _Time.y);
+    float2 rainbowUV = frac(IN.uv_Rainbow + (_Time.y / 2));
 
     // sample the texture
     fixed4 spriteColor = tex2D(_MainTex, IN.uv);
