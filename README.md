@@ -124,3 +124,8 @@ fixed4 frag (v2f IN) : SV_Target
 - Add an Animator Controller and an Idle animation to the Prefab.
 - Rotate the Light Rays.
 - Implement a heartbeat animation for the Sign.
+
+<!-- 8.mp4 -->
+
+https://user-images.githubusercontent.com/4588601/201554488-967e98d2-3539-43e2-aa18-abbbce957e04.mp4
+
