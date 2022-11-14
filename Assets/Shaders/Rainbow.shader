@@ -4,6 +4,8 @@ Shader "UI/Rainbow"
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
         _RainbowTexture("Rainbow Texture", 2D) = "white" {}
+        _RainbowVelocity("Rainbow Velocity", Float) = 1
+        _RainbowIntensity("Rainbow Intensity", Float) = 3
     }
     SubShader
     {
@@ -47,6 +49,9 @@ Shader "UI/Rainbow"
             sampler2D _RainbowTexture;
             float4 _RainbowTexture_ST;
 
+            float _RainbowVelocity;
+            float _RainbowIntensity;
+
             v2f vert (appdata IN)
             {
                 v2f OUT;
@@ -59,13 +64,13 @@ Shader "UI/Rainbow"
             fixed4 frag (v2f IN) : SV_Target
             {
                 // animate uvs for rainbow
-                float2 rainbowUV = frac(IN.uv_Rainbow + (_Time.y / 2));
+                float2 rainbowUV = frac(IN.uv_Rainbow + (_Time.y * _RainbowVelocity));
 
                 // sample the texture
                 fixed4 spriteColor = tex2D(_MainTex, IN.uv);
                 fixed4 rainbowColor = tex2D(_RainbowTexture, rainbowUV);
 
-                fixed4 multipliedColor = spriteColor * rainbowColor; // multiply
+                fixed4 multipliedColor = spriteColor + (rainbowColor * _RainbowIntensity); // multiply
                 multipliedColor *= spriteColor.a; // so that the blendind one one works ok
 
                 return multipliedColor;

@@ -9,7 +9,8 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
 - [Implementation](#implementation)
   - [Design UI Elements](#design-ui-elements)
   - [Install the UI Particle Package for Particle Systems in the GUI](#install-the-ui-particle-package-for-particle-systems-in-the-gui)
-  - [Rainbow Light Rays](#rainbow-light-rays)
+  - [Rainbow Light Rays and Outer Glow](#rainbow-light-rays-and-outer-glow)
+  - [Stars Particle System](#stars-particle-system)
 
 ### Resources
 
@@ -40,7 +41,9 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
 
 ![Picture](./docs/1.jpg)
 
-### Rainbow Light Rays
+### Rainbow Light Rays and Outer Glow
+
+#### Rainbow Lights
 
 - Add an Image to the Canvas.
 - Create a Shader for it and a Material.
@@ -91,10 +94,26 @@ fixed4 frag (v2f IN) : SV_Target
     fixed4 rainbowColor = tex2D(_RainbowTexture, rainbowUV);
 
     fixed4 multipliedColor = spriteColor * rainbowColor; // multiply
-    multipliedColor *= spriteColor.a; // so that the blendind one one works ok
+    multipliedColor *= spriteColor.a; // so that the blending one one works ok
 
     return multipliedColor;
 }
 ```
 
+#### Outer Glow
+
+- Create a Material for it using the `UIAdditive` shader included in the `UI Particle` package.
+- Assign it to the image renderer.
+
 ![Picture](./docs/3.jpg)
+
+### Stars Particle System
+
+- Create a Shuriken particle system gameobject and add the UI Particle script to it, to be able to render particles with the Canvas Renderer.
+- Set `Start Lifetime`, `Start Speed`, `Duration`, `Start Size` and `Rate Over Time`.
+- Set `Color over Lifetime` and `Size over Lifetime`.
+
+![Picture](./docs/7.jpg)
+![Picture](./docs/5.jpg)
+![Picture](./docs/6.jpg)
+![Picture](./docs/4.jpg)

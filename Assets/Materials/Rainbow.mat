@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _RainbowTexture:
         m_Texture: {fileID: 2800000, guid: 877723959a0c74ae38d59a2dfc0a7943, type: 3}
-        m_Scale: {x: 0.5, y: 0.5}
+        m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     m_Ints:
     - _TilingColumns: 10
@@ -81,6 +81,8 @@ Material:
     - _OcclusionStrength: 1
     - _Offset: 0.36
     - _Parallax: 0.02
+    - _RainbowIntensity: 4
+    - _RainbowVelocity: 0.3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
