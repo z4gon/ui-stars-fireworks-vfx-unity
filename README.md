@@ -11,6 +11,7 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
   - [Install the UI Particle Package for Particle Systems in the GUI](#install-the-ui-particle-package-for-particle-systems-in-the-gui)
   - [Rainbow Light Rays and Outer Glow](#rainbow-light-rays-and-outer-glow)
   - [Stars Particle System](#stars-particle-system)
+  - [Animation for Light Rays and Sign](#animation-for-light-rays-and-sign)
 
 ### Resources
 
@@ -117,3 +118,9 @@ fixed4 frag (v2f IN) : SV_Target
 ![Picture](./docs/5.jpg)
 ![Picture](./docs/6.jpg)
 ![Picture](./docs/4.jpg)
+
+### Animation for Light Rays and Sign
+
+- Add an Animator Controller and an Idle animation to the Prefab.
+- Rotate the Light Rays.
+- Implement a heartbeat animation for the Sign.
