@@ -12,6 +12,7 @@ Implemented with Shuriken Particle System in **Unity 2021.3.10f1**
   - [Rainbow Light Rays and Outer Glow](#rainbow-light-rays-and-outer-glow)
   - [Stars Particle System](#stars-particle-system)
   - [Animation for Light Rays and Sign](#animation-for-light-rays-and-sign)
+  - [Fireworks Particle System](#fireworks-particle-system)
 
 ### Resources
 
@@ -110,7 +111,8 @@ fixed4 frag (v2f IN) : SV_Target
 
 ### Stars Particle System
 
-- Create a Shuriken particle system gameobject and add the UI Particle script to it, to be able to render particles with the Canvas Renderer.
+- Create a `UIParticle` gameobject with a nested Shuriken `Particle System` to be able to render particles with the Canvas Renderer.
+- Add the `Particle System` to the `UIParticle` object renderer's list, so it creates the `UIParticleRenderers` for it.
 - Set `Start Lifetime`, `Start Speed`, `Duration`, `Start Size` and `Rate Over Time`.
 - Set `Color over Lifetime` and `Size over Lifetime`.
 
@@ -129,3 +131,15 @@ fixed4 frag (v2f IN) : SV_Target
 
 https://user-images.githubusercontent.com/4588601/201554488-967e98d2-3539-43e2-aa18-abbbce957e04.mp4
 
+### Fireworks Particle System
+
+- Create a `UIParticle` gameobject with a nested Shuriken `Particle System` to be able to render particles with the Canvas Renderer.
+- Add the `Particle System` to the `UIParticle` object renderer's list, so it creates the `UIParticleRenderers` for it.
+- Use the main particle system to burst 3 particles that will act as the main firework particle.
+- Use trails for the particles.
+- Use sub emitters to display an explosion and to burst more particles out of the explosion, with trails too.
+- Be sure to have a single `UIParticle` parent object that will manage all child particle systems rendering.
+
+![Picture](./docs/10.jpg)
+![Picture](./docs/11.jpg)
+![Picture](./docs/9.jpg)
