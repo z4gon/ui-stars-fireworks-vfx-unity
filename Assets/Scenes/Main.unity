@@ -465,10 +465,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1472144894}
     m_Modifications:
-    - target: {fileID: 1475090583, guid: 7f323ef38dcb3444fb85abe01ab3b022, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4081357229114876805, guid: 7f323ef38dcb3444fb85abe01ab3b022, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -556,10 +552,6 @@ PrefabInstance:
     - target: {fileID: 4081357229114876806, guid: 7f323ef38dcb3444fb85abe01ab3b022, type: 3}
       propertyPath: m_Name
       value: LevelUpSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 6265004035020363640, guid: 7f323ef38dcb3444fb85abe01ab3b022, type: 3}
-      propertyPath: playOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f323ef38dcb3444fb85abe01ab3b022, type: 3}
